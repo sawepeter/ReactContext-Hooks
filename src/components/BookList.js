@@ -11,8 +11,9 @@ const BookList = () => {
         <div className='book-list' style={{ color: theme.syntax, background: theme.bg }}>
         <ul>
             {books.map(book => {
+                return (
                 <li key={book.id} style={{ background: theme.ui }}>{book.title}</li>
-
+                )
             })}
         </ul>
     </div>
